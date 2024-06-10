@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { animate, motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs";
-import me from "../assets/bg1.png";
+import me from "../assets/bg2.png";
 
 const Home = ({ ratio }) => {
   const clientCount = useRef(null);
@@ -48,7 +48,7 @@ const Home = ({ ratio }) => {
       <section>
         <div>
           <motion.h1 {...animations.h1}>
-            Hi, I Am <br /> Jyoti prakash 
+            Hi, I Am <br /> Jyoti prakash
           </motion.h1>
 
           <Typewriter
@@ -71,11 +71,12 @@ const Home = ({ ratio }) => {
           <article>
             <p>
               +
-                <motion.span
-                  whileInView={animationClientsCount}
-                  ref={clientCount}
-                >100</motion.span>
-             
+              <motion.span
+                whileInView={animationClientsCount}
+                ref={clientCount}
+              >
+                100
+              </motion.span>
             </p>
             <span>Clients Worldwide</span>
           </article>
@@ -84,14 +85,12 @@ const Home = ({ ratio }) => {
             <article>
               <p>
                 +
-               
-                  <motion.span
-                    ref={projectCount}
-                    whileInView={animationProjectsCount}
-                  >
-                    500
-                  </motion.span>
-               
+                <motion.span
+                  ref={projectCount}
+                  whileInView={animationProjectsCount}
+                >
+                  500
+                </motion.span>
               </p>
               <span>Projects Done</span>
             </article>
